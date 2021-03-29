@@ -19,4 +19,8 @@ class UserController extends Controller
             return redirect('/');
         };
     }
+    function logout(Request $req){
+        $req->session()->forget('user');
+        return redirect('/login');
+    }
 }
