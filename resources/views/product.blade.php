@@ -1,6 +1,6 @@
 @extends('master')
 @section('content')
-<div class="container custom-product">
+<div class="custom-product">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -14,7 +14,7 @@
             @foreach ($products as $item)
           <div class="item {{$item['id']==1?'active':''}}">
             <img class="slider-img" src="{{$item['galeri']}}">
-              <div class="carousel-caption">
+              <div class="carousel-caption slider-text">
                 <h3>{{$item['nama']}}</h3>
                 <p>{{$item['deskripsi']}}</p>
             </div>

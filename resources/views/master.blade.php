@@ -27,7 +27,10 @@
         height: 400px !important
     }
     .custom-product{
-        height: 600px
+        height: 600px;
+    }
+    .slider-text{
+        background-color: lightcoral !important;
     }
 </style>
 </html>
